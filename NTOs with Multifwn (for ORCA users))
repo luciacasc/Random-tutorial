@@ -1,0 +1,60 @@
+# How to visualize NTOs using Multiwfn (for ORCA users)
+References: 
+- Multifwn manual
+- [link] (https://www.youtube.com/watch?v=-3TXfdO8H7s&ab_channel=sobereva)
+## Prepare the files:
+Two files are necessary:
+- the file containing basis function and molecular orbital information
+	- for ORCA users this information is contained in .gbw file. You have to corver the gbw file info molden file, using orca_2mkl. If the .gbw is named Test.gbw: 
+	```
+	orca_2mkl Test -molden
+	```
+- the file cointaining configuration coefficient of excited states
+    - for ORCA users it is important to set ```tprint 1E-8``` whitin the %tddft block
+
+
+## Generate the file (.fch file)
+Boot up Multiwfn. 
+- input \\
+```
+path\file.input.molden
+```
+- 18 // Electron excitation analysis
+- 6 // Generate NTOs
+- ```path\file.out```
+- 1 for singles 3 for triplets
+- type the state
+-  2 Output NTO orbitals to .fch file
+- ``` path\file.fch ```
+- 2 save as .fch file
+- path\file.fch
+0 0 for visualizing
+
+
+## Visualize the NTOs
+- path\file.fch
+- 0 
+- GUI: "orbital info" > show up LUMO +10
+- look for couple with major weight (shell) and insert the number (GUI)
+
+ex. 
+ Orb:   145 Ene(au/eV):     0.021347       0.5809 Occ: 2.000000 Type:A+B (    )
+ Orb:   146 Ene(au/eV):     0.045094       1.2271 Occ: 2.000000 Type:A+B (    )
+ Orb:   147 Ene(au/eV):     0.915429      24.9101 Occ: 2.000000 Type:A+B (    )
+ Orb:   148 Ene(au/eV):     0.915429      24.9101 Occ: 0.000000 Type:A+B (    )
+ Orb:   149 Ene(au/eV):     0.045094       1.2271 Occ: 0.000000 Type:A+B (    )
+ Orb:   150 Ene(au/eV):     0.021347       0.5809 Occ: 0.000000 Type:A+B (    )
+
+You have to visualise 147 and 148
+- return to close
+
+
+## Create cub file
+- load fch file 
+- 200
+- 3 // Generate cube file for multiple orbital wavefunctions
+- 147,148 // orbitals
+- 2 // medium quality grid
+- 1 // 1 Output the grid data of these orbitals as separate cube files
+- 0
+- r load a new file or q quit
