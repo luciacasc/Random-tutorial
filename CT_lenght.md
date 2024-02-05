@@ -36,6 +36,7 @@ Two files are necessary:
 ``` path\file.molden ```
 - 18 // Electron excitation analysis
 - 4 // Calculate delta r index 	``` path\file.out ```
+- 1 // 1 singlet 3 triplets. This step is not shown if there are omly siglets
 - 3 // Assume that we want to calculate $\Delta r$ index for third calculated singlet excited state. Immediately, the results are printed on screen: ``` Excited state 3: Delta_r = 1.499249 Bohr, 0.793368 Angstrom (..)  ```
 - y  // Print orbital pair contributions
 - 0.01 // Only the orbital pairs having contribution larger than 0.01 Å will be printed
