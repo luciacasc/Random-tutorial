@@ -1,8 +1,7 @@
-This function is used to calculate overlap and centroid distance between two orbitals. \\
-In this example, we use a NTO file.
-
-
 # How to calculate centriods distance using Multiwfn (for ORCA users)
+This function is used to calculate overlap and centroid distance between two orbitals. 
+
+In this example, we use a NTO file.
 References: 
 Multifwn manual
 	- input file 3.21
