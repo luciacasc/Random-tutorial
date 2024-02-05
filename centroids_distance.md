@@ -2,7 +2,7 @@ This function is used to calculate overlap and centroid distance between two orb
 In this example, we use a NTO file.
 
 
-# How to visualize NTOs using Multiwfn (for ORCA users)
+# How to calculate centriods distance using Multiwfn (for ORCA users)
 References: 
 Multifwn manual
 	- input file 3.21
