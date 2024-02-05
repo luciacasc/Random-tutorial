@@ -1,9 +1,8 @@
 # How to calculate centriods distance using Multiwfn (for ORCA users)
 This function is used to calculate overlap and centroid distance between two orbitals. 
 
-In this example, we use a NTO file.
-
-References: 
+In this example, we use a NTO file.\
+References:\
 Multifwn manual
 - input file 3.21
 - centroids distance par 3.100.11 (Calculate overlap and centroid distance between two orbitals)
@@ -50,20 +49,16 @@ path\file.input.molden
   
 Output example:\
  X/Y/Z of centroid of electron density (Angstrom)\
- Orbital   147:   -3.318173    1.801150   -3.319016 \
- 
- Orbital   148:   -3.484404    0.793266   -4.452829
- 
- Centroid distance between the two orbitals:    2.883919 Angstrom
- 
- Overlap integral of norm of the two orbitals:    0.6571412334
- 
- Overlap integral of square of the two orbitals:    0.0019639334
+ Orbital   147:   -3.318173    1.801150   -3.319016\
+ Orbital   148:   -3.484404    0.793266   -4.452829\
+ Centroid distance between the two orbitals:    2.883919 Angstrom\
+ Overlap integral of norm of the two orbitals:    0.6571412334\
+ Overlap integral of square of the two orbitals:    0.0019639334\
 
 ## Script example 
 
 This script runs over all fch file and calculates the centroids distance between orbitals 147-148 
-(occupied NTO -> virtual NTO). 
+(occupied NTO -> virtual NTO).\
 The output file contains two columns: the id_file and the centroid distance between the two orbitals (Angstrom).
 
 ```
