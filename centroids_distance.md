@@ -5,8 +5,8 @@ In this example, we use a NTO file.
 
 References: 
 Multifwn manual
-	- input file 3.21
-	- centroids distance par 3.100.11 (Calculate overlap and centroid distance between two orbitals)
+- input file 3.21
+- centroids distance par 3.100.11 (Calculate overlap and centroid distance between two orbitals)
 
 
 ## Prepare the files:
