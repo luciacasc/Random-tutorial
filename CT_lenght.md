@@ -1,18 +1,27 @@
 # Calculating $\Delta r$
 The $\Delta r$ index is a quantitative indicator for measuring charge transfer (CT) length of electron excitation, 
 larger $\Delta r$ index implies longer CT distance. \\
-The original paper of $\Delta r$ suggests using 2.0 $\AA$ Å as criterion for distinguishing LE and CT excitations.
+The original paper of $\Delta r$ suggests using 2.0 Å as criterion for distinguishing LE and CT excitations.
+
+pag 223: \\
+| Excitation type     | Index D |
+|---------------------|---------|
+| LE                  | small   |
+| Single direction CT | large   |
+| Centrosymmetric CT  | small   |
+
 
 
 # How to visualize NTOs using Multiwfn (for ORCA users)
 References: 
 Multifwn manual
-    - centroids distance theory 3.21.4
-    - centroids distance example 4.18.4
+	- input file 3.21
+	- centroids distance theory 3.21.4
+	- centroids distance example 4.18.4
 ## Prepare the files:
 Two files are necessary:
 - the file containing basis function and molecular orbital information
-	- for ORCA users this information is contained in .gbw file. You have to corver the gbw file info molden file, using orca_2mkl. If the .gbw is named Test.gbw: 
+	- for ORCA users this information is contained in .gbw file. You have to convert the gbw file info molden file, using orca_2mkl. If the .gbw is named Test.gbw: 
 	```
 	orca_2mkl Test -molden
 	```
@@ -22,7 +31,7 @@ Two files are necessary:
 
 ## Generate the file (.fch file)
 Boot up Multiwfn. 
-- input \\
+- input 
 ```
 path\file.input.molden
 ```
@@ -40,10 +49,9 @@ path\file.input.molden
 
 
 ## Calculate distance
-- Boot up Multiwfn and input \\
+- Boot up Multiwfn and input 
 ``` path\file.fch ```
-18 // Electron excitation analysis
-4 // Calculate delta r index \\
-``` path\file.out ```
-1-5 // Assume that we want to calculate  r index for all the five calculated singlet excited states
-Immediately, the results are printed on screen:
+- 18 // Electron excitation analysis
+- 4 // Calculate delta r index ``` path\file.out ```
+- 1-5 // Assume that we want to calculate  r index for all the five calculated singlet excited states
+- Immediately, the results are printed on screen:
