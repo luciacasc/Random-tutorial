@@ -48,11 +48,9 @@ path\file.input.molden
 -  y // add dummy atoms
 -  0
   
-Output example: 
-
- X/Y/Z of centroid of electron density (Angstrom)
- 
- Orbital   147:   -3.318173    1.801150   -3.319016 
+Output example:\
+ X/Y/Z of centroid of electron density (Angstrom)\
+ Orbital   147:   -3.318173    1.801150   -3.319016 \
  
  Orbital   148:   -3.484404    0.793266   -4.452829
  
