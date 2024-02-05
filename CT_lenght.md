@@ -13,11 +13,12 @@ pag 223: \\
 
 
 # How to visualize NTOs using Multiwfn (for ORCA users)
-References: 
+References:\ 
 Multifwn manual
-	- input file 3.21
-	- centroids distance theory 3.21.4
-	- centroids distance example 4.18.4
+- input file 3.21 (3 Input files)
+- centroids distance theory 3.21.4
+- centroids distance example 4.18.4
+
 ## Prepare the files:
 Two files are necessary:
 - the file containing basis function and molecular orbital information
@@ -25,33 +26,21 @@ Two files are necessary:
 	```
 	orca_2mkl Test -molden
 	```
-- the file cointaining configuration coefficient of excited states
+- the file cointaining configuration coefficient of excited states (.out)
     - for ORCA users it is important to set ```tprint 1E-8``` whitin the %tddft block
-
-
-## Generate the file (.fch file)
-Boot up Multiwfn. 
-- input 
-```
-path\file.input.molden
-```
-- 18 // Electron excitation analysis
-- 6 // Generate NTOs
-- ```path\file.out```
-- 1 for singles 3 for triplets
-- type the state
--  2 Output NTO orbitals to .fch file
-- ``` path\file.fch ```
-- 2 save as .fch file
-- path\file.fch
-0 0 for visualizing
 
 
 
 ## Calculate distance
 - Boot up Multiwfn and input 
-``` path\file.fch ```
+``` path\file.molden ```
 - 18 // Electron excitation analysis
-- 4 // Calculate delta r index ``` path\file.out ```
-- 1-5 // Assume that we want to calculate  r index for all the five calculated singlet excited states
+- 4 // Calculate delta r index 	``` path\file.out ```
+- 1-5 // Assume that we want to calculate $\Delta r$ index for all the five calculated singlet excited states
 - Immediately, the results are printed on screen:
+  ``` Excited state 1: Delta_r = 1.499249 Bohr, 0.793368 Angstrom
+(..)  ```
+
+
+
+  continua a leggere da pag 671
