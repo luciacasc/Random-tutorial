@@ -53,7 +53,7 @@ Output example:\
  Orbital   148:   -3.484404    0.793266   -4.452829\
  Centroid distance between the two orbitals:    2.883919 Angstrom\
  Overlap integral of norm of the two orbitals:    0.6571412334\
- Overlap integral of square of the two orbitals:    0.0019639334\
+ Overlap integral of square of the two orbitals:    0.0019639334
 
 ## Script example 
 
