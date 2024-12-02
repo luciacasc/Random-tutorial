@@ -10,7 +10,10 @@ pag 223: \\
 | Single direction CT | large   |
 | Centrosymmetric CT  | small   |
 
-
+# Calculate CT dist using difference density file (sec 4.18.3 manual)
+- Load the difference density file
+- 18
+- 3
 
 # How to visualize NTOs using Multiwfn (for ORCA users)
 References:\ 
